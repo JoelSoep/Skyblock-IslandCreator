@@ -1,0 +1,28 @@
+name: Islandcreator
+version: '${project.version}'
+main: net.mineworld.islandcreator.IslandCreator
+api-version: 1.18
+authors: [ JoelSoep ]
+description: Island Creator for Mineworld.net
+website: mineworld.net
+depend: [ SuperiorSkyblock2, PlaceholderAPI ]
+
+commands:
+  mw-consoleislandmgr:
+    usage: /<command>
+    description: Island Manager Command (Console Only)
+    aliases: [mw-cim]
+    permission: mineworld.islandcreator.consoleislandmgr
+  mw-consoletpisland:
+    usage: /<command>
+    description: Teleports player to Island (Console Only)
+    aliases: [mw-cti]
+    permission: mineworld.islandcreator.tpisland
+  islandpermission:
+    usage: /<command>
+    description: Island Permission Command
+    permission: mineworld.islandcreator.islandpermission
+  mw-som:
+    usage: /<command>
+    description: Island Menu Manager
+    permission: mineworld.islandcreator.menus
